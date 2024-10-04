@@ -1,0 +1,33 @@
+{
+  "extends": "@open-web3/dev-config/config/tsconfig.json",
+  "exclude": ["build/**/*", "**/build/**/*", "**/__tests__/**/*", "**/__mock__/**/*"],
+  "compilerOptions": {
+    "target": "es2019",
+    "module": "CommonJS",
+    "baseUrl": ".",
+    "noImplicitAny": false,
+    "noUnusedLocals": false,
+    "paths": {
+      "@open-web3/api": ["packages/api/src"],
+      "@open-web3/api/*": ["packages/api/src/*"],
+      "@open-web3/scanner": ["packages/scanner/src"],
+      "@open-web3/scanner/*": ["packages/scanner/src/*"],
+      "@open-web3/orml-types": ["packages/orml-types/src"],
+      "@open-web3/orml-types/*": ["packages/orml-types/src/*"],
+      "@open-web3/orml-type-definitions": ["packages/orml-type-definitions/src"],
+      "@open-web3/orml-type-definitions/*": ["packages/orml-type-definitions/src/*"],
+      "@open-web3/orml-api-derive": ["packages/orml-api-derive/src"],
+      "@open-web3/orml-api-derive/*": ["packages/orml-api-derive/src/*"],
+      "@open-web3/indexer": ["packages/indexer/src"],
+      "@open-web3/indexer/*": ["packages/indexer/src/*"],
+      "@open-web3/util": ["packages/util/src"],
+      "@open-web3/util/*": ["packages/util/src/*"],
+      "@open-web3/dispatcher": ["packages/dispatcher/src"],
+      "@open-web3/dispatcher/*": ["packages/dispatcher/src/*"],
+      "@open-web3/asset-metadata": ["packages/asset-metadata/src"],
+      "@open-web3/asset-metadata/*": ["packages/asset-metadata/src/*"]
+    },
+    "skipLibCheck": true,
+    "typeRoots": ["./node_modules/@polkadot/ts", "./node_modules/@types"]
+  }
+}

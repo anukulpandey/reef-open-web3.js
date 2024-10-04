@@ -1,0 +1,26 @@
+{
+  "name": "@open-web3/asset-metadata",
+  "version": "2.0.2-0",
+  "description": "Extended API library for polkadot.js",
+  "main": "index.js",
+  "author": "Laminar Developers <hello@laminar.one>",
+  "license": "Apache-2.0",
+  "bin": {
+    "substrate-asset": "./cli/index.js"
+  },
+  "publishConfig": {
+    "access": "public",
+    "registry": "https://registry.npmjs.org"
+  },
+  "repository": "https://github.com/open-web3-stack/open-web3.js.git",
+  "bugs": {
+    "url": "https://github.com/open-web3-stack/open-web3.js/issues"
+  },
+  "homepage": "https://github.com/open-web3-stack/open-web3.js",
+  "peerDependencies": {
+    "@polkadot/api": "^13.2.1"
+  },
+  "dependencies": {
+    "yargs": "^17.5.1"
+  }
+}
